@@ -1,0 +1,227 @@
+/* Fonts
+
+font-family: 'Poppins', sans-serif; (Body text)
+font-family: 'Righteous', cursive; (Logo)
+
+*/
+
+:root {
+    --hero-footer-background: #1F2937;
+    --button-action-color: #3882F6;
+    --quote-background: #E5E7EB;
+}
+
+
+/* resets */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, img, span, label, input, button {
+    display: block;
+}
+
+button {
+    background: none;
+    border: none;
+    font: inherit;
+}
+  
+button {
+    cursor: pointer;
+}
+  
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+section {
+    padding-block: 50px;
+}
+
+/* reused */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: var(--button-action-color);
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* header */
+
+.header {
+    background-color: var(--hero-footer-background);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+#logo {
+    font-family: 'Righteous', cursive;
+    font-size: 45px;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-link {
+    color: white;
+}
+
+
+/* hero */
+
+.hero {
+    background-color: #1F2937;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+}
+
+.hero-info {
+    color: white;
+}
+
+.hero-info * {
+    margin-block-end: 25px;
+}
+
+.hero-title {
+    font-size: 50px;
+}
+
+.hero-text {
+    font-size: 16px;
+}
+
+/* our features */
+
+.our-features-title {
+    text-align: center;
+    font-size: 25px;
+    padding: 35px;
+}
+
+.features-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature {
+    width: 22%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature-img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.feature-img img {
+    width: 100%;
+    height: auto;
+}
+
+.feature-text {
+    font-size: 16px;
+}
+
+/* review */
+
+.review {
+    background-color: var(--quote-background);
+    background-image: url(assets/boy-enjoying-hiking/Boy-enjoying-hiking.svg);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.review .container {
+    padding: 30px;
+}
+
+.review-text {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.review-author {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* call to action */
+
+.call-to-action-card {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: var(--button-action-color);
+    color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.call-to-action-text {
+    font-size: 20px;
+}
+
+.call-to-action-btn {
+    border: 1px solid white;
+}
+
+.call-to-action-btn:hover {
+    border: 1px solid white;
+    background-color: white;
+    color: var(--button-action-color);
+}
+
+/* footer */
+
+footer {
+    background-color: var(--hero-footer-background);
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
